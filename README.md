@@ -29,7 +29,15 @@ cd craveu && python3 -m http.server 8080
 
 Then open http://localhost:8080 (website) and http://localhost:8080/app/ (app).
 
-## Publish on GitHub Pages (public links for the report)
+## Live links (for the report)
+
+- Website: https://aviparmar21234.github.io/craveu/
+- App prototype: https://aviparmar21234.github.io/craveu/app/
+- Repo: https://github.com/AviParmar21234/craveu
+
+Published 2026-11-13 from the `main` branch. To update: edit, then `git add . && git commit -m "..." && git push`; Pages rebuilds in about a minute.
+
+## How it was published (GitHub Pages)
 
 1. Create a new **public** repository on GitHub, e.g. `craveu`.
 2. From this folder:
