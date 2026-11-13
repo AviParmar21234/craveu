@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What's Cooking — CraveU kitchen bays at the University of Miami</title>
+  <meta name="description" content="All eight CraveU kitchen bays: local Miami favorites and national brands, their hours, and what to order.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="stripe"></div>
+  <header class="site-header">
+    <nav class="wrap nav" aria-label="Main">
+      <a class="nav__logo" href="index.html" aria-label="CraveU home"><img src="assets/logo.png" alt="CraveU"></a>
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="restaurants.html">What's Cooking</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="partners.html">For Restaurants</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav__cta">
+        <a class="btn btn--ghost btn--sm" href="partners.html">Rent a bay</a>
+        <a class="btn btn--sm" href="app/">Order pickup</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="wrap">
+        <span class="eyebrow">8 bays · 1 pickup counter</span>
+        <h1>What's cooking</h1>
+        <p class="lead">Every restaurant here is takeout-only by design, so each one is set up to cook fast and hand off at one counter. Bays rotate as the semester goes on. Tap any bay to order in the app.</p>
+        <div><span class="pill pill--orange">Local favorite</span><span class="pill">National brand</span><span class="pill" style="background:var(--cream); color:var(--muted); border-color:var(--muted);">Open bay</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap grid grid--4">
+
+        <a class="bay reveal" id="bay-1" href="app/?bay=1">
+          <span class="bay__tag bay__tag--local">Local favorite</span><span class="bay__no">Bay 1</span>
+          <div class="bay__art c">☕</div>
+          <div class="bay__body">
+            <h3>Café Cortadito</h3>
+            <p class="small muted mb-0">Cuban coffee, pastelitos, breakfast sandwiches. The 8 AM lifeline.</p>
+            <div class="bay__meta mt-1"><span>7:30 AM – 3 PM</span><span data-open="07:30" data-close="15:00">Open</span></div>
+          </div>
+        </a>
+
+        <a class="bay reveal" id="bay-2" href="app/?bay=2" data-delay="1">
+          <span class="bay__tag bay__tag--local">Local favorite</span><span class="bay__no">Bay 2</span>
+          <div class="bay__art o">🥪</div>
+          <div class="bay__body">
+            <h3>Sabor de Calle Ocho</h3>
+            <p class="small muted mb-0">Media noche, Cubano, ropa vieja bowls. A Little Havana family kitchen, now steps from campus.</p>
+            <div class="bay__meta mt-1"><span>10:30 AM – 10 PM</span><span data-open="10:30" data-close="22:00">Open</span></div>
+          </div>
+        </a>
+
+        <a class="bay reveal" id="bay-3" href="app/?bay=3" data-delay="2">
+          <span class="bay__tag">National brand</span><span class="bay__no">Bay 3</span>
+          <div class="bay__art">🍔</div>
+          <div class="bay__body">
+            <h3>Hurricane Smash</h3>
+            <p class="small muted mb-0">Smash burgers, crinkle fries, shakes. The familiar order that's always a safe bet.</p>
+            <div class="bay__meta mt-1"><span>10:30 AM – 11 PM</span><span data-open="10:30" data-close="23:00">Open</span></div>
+          </div>
+        </a>
+
+        <a class="bay reveal" id="bay-4" href="app/?bay=4" data-delay="3">
+          <span class="bay__tag bay__tag--local">Local favorite</span><span class="bay__no">Bay 4</span>
+          <div class="bay__art o">🌮</div>
+          <div class="bay__body">
+            <h3>Taco Tuyo</h3>
+            <p class="small muted mb-0">Al pastor, birria, burrito bowls. Three tacos in under ten minutes.</p>
+            <div class="bay__meta mt-1"><span>11 AM – 11 PM</span><span data-open="11:00" data-close="23:00">Open</span></div>
+          </div>
+        </a>
+
+        <a class="bay reveal" id="bay-5" href="app/?bay=5">
+          <span class="bay__tag bay__tag--local">Local favorite</span><span class="bay__no">Bay 5</span>
+          <div class="bay__art c">🥗</div>
+          <div class="bay__body">
+            <h3>Gables Bowl Co.</h3>
+            <p class="small muted mb-0">Grain bowls, poke, smoothies. Vegan and gluten-free marked on every item.</p>
+            <div class="bay__meta mt-1"><span>10:30 AM – 9 PM</span><span data-open="10:30" data-close="21:00">Open</span></div>
+          </div>
+        </a>
+
+        <a class="bay reveal" id="bay-6" href="app/?bay=6" data-delay="1">
+          <span class="bay__tag">National brand</span><span class="bay__no">Bay 6</span>
+          <div class="bay__art">🍕</div>
+          <div class="bay__body">
+            <h3>Dough &amp; Co.</h3>
+            <p class="small muted mb-0">Pizza by the slice, garlic knots, whole pies for study groups.</p>
+            <div class="bay__meta mt-1"><span>11 AM – 11 PM</span><span data-open="11:00" data-close="23:00">Open</span></div>
+          </div>
+        </a>
+
+        <a class="bay reveal" id="bay-7" href="app/?bay=7" data-delay="2">
+          <span class="bay__tag bay__tag--local">Local favorite</span><span class="bay__no">Bay 7</span>
+          <div class="bay__art g">🍜</div>
+          <div class="bay__body">
+            <h3>Night Owl Noodles</h3>
+            <p class="small muted mb-0">Ramen, dumplings, bubble tea. The only kitchen on this side of campus open past midnight.</p>
+            <div class="bay__meta mt-1"><span>5 PM – 1 AM</span><span data-open="17:00" data-close="01:00">Open</span></div>
+          </div>
+        </a>
+
+        <a class="bay reveal" id="bay-8" href="partners.html" data-delay="3" style="border-style:dashed; background:var(--cream);">
+          <span class="bay__tag" style="background:var(--muted);">Open bay</span><span class="bay__no">Bay 8</span>
+          <div class="bay__art c" style="font-family:var(--font-display); font-size:2.2rem; color:var(--orange);">Your name here</div>
+          <div class="bay__body">
+            <h3>Next up: you?</h3>
+            <p class="small muted mb-0">One bay opens each January. Local owners and franchise operators can apply now.</p>
+            <div class="bay__meta mt-1"><span class="open">Accepting applications</span></div>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <section class="section section--green">
+      <div class="wrap split">
+        <div>
+          <span class="eyebrow">Why the mix matters</span>
+          <h2>Variety is the product.</h2>
+          <p class="lead">A dining hall feeds you. CraveU lets you choose. We fill bays deliberately: a few national brands for the people who know what they want, and more local favorites for the people who want something they can't get anywhere else on campus. Each semester we review sales and student feedback and rotate the weakest bay.</p>
+        </div>
+        <div class="grid grid--2">
+          <div class="card card--flat" style="background:rgba(243,231,207,0.08); border-color:rgba(243,231,207,0.3); color:var(--cream);"><span class="card__num">5</span><h4 style="color:var(--cream);">Local favorites</h4><p class="small mb-0" style="color:rgba(243,231,207,0.8);">Food you'd otherwise drive to Little Havana or Brickell for.</p></div>
+          <div class="card card--flat" style="background:rgba(243,231,207,0.08); border-color:rgba(243,231,207,0.3); color:var(--cream);"><span class="card__num">2</span><h4 style="color:var(--cream);">National brands</h4><p class="small mb-0" style="color:rgba(243,231,207,0.8);">Instant recognition and the steady orders that keep the hall busy.</p></div>
+          <div class="card card--flat" style="background:rgba(243,231,207,0.08); border-color:rgba(243,231,207,0.3); color:var(--cream);"><span class="card__num">1</span><h4 style="color:var(--cream);">Rotating bay</h4><p class="small mb-0" style="color:rgba(243,231,207,0.8);">Student orgs vote on the next tenant every semester.</p></div>
+          <div class="card card--flat" style="background:rgba(243,231,207,0.08); border-color:rgba(243,231,207,0.3); color:var(--cream);"><span class="card__num">1</span><h4 style="color:var(--cream);">Pickup counter</h4><p class="small mb-0" style="color:rgba(243,231,207,0.8);">All eight bays hand off at the same spot, so a group order is one trip.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section center">
+      <div class="wrap">
+        <h2>Hungry already?</h2>
+        <p class="lead">Open the prototype, pick a bay and place a test order.</p>
+        <a class="btn btn--lg" href="app/">Order pickup in the app</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div>
+          <a class="footer__logo" href="index.html" aria-label="CraveU home"><img src="assets/logo.png" alt="CraveU"></a>
+          <p class="mt-1 small">A takeout-only kitchen hall for students, faculty and staff at the University of Miami. Every craving, one quick pickup.</p>
+          <p class="small">Founded in Coral Gables by UM students, 2026.</p>
+        </div>
+        <div><h4>Eat</h4><ul><li><a href="restaurants.html">What's cooking</a></li><li><a href="how-it-works.html">How it works</a></li><li><a href="app/">Order in the app</a></li></ul></div>
+        <div><h4>Cook</h4><ul><li><a href="partners.html">Rent a kitchen bay</a></li><li><a href="partners.html#pricing">Pricing</a></li><li><a href="partners.html#apply">Apply</a></li></ul></div>
+        <div><h4>Contact</h4><ul><li><a href="mailto:hello@craveu.app">hello@craveu.app</a></li><li><a href="tel:+13055550188">(305) 555-0188</a></li><li>Ponce de Leon Blvd<br>Coral Gables, FL 33146</li><li><a href="about.html">About the founders</a></li></ul></div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> CraveU. A BTE 210 student venture at the University of Miami.</span>
+        <span>Not affiliated with or endorsed by the University of Miami.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="js/site.js"></script>
+</body>
+</html>

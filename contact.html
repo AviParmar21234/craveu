@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — CraveU, Coral Gables</title>
+  <meta name="description" content="Find CraveU across from the University of Miami Coral Gables campus. Hours, address, email, phone and a quick contact form.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="stripe"></div>
+  <header class="site-header">
+    <nav class="wrap nav" aria-label="Main">
+      <a class="nav__logo" href="index.html" aria-label="CraveU home"><img src="assets/logo.png" alt="CraveU"></a>
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="restaurants.html">What's Cooking</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="partners.html">For Restaurants</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav__cta">
+        <a class="btn btn--ghost btn--sm" href="partners.html">Rent a bay</a>
+        <a class="btn btn--sm" href="app/">Order pickup</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="wrap">
+        <span class="eyebrow">Find us</span>
+        <h1>Contact CraveU</h1>
+        <p class="lead">Across the street from campus, open early and late. Questions about an order go fastest through the app; everything else, reach us here.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split" style="align-items:start;">
+        <div>
+          <div class="grid grid--2">
+            <div class="card reveal">
+              <h4 class="eyebrow">Visit</h4>
+              <h3>The hall</h3>
+              <p class="mb-0">Ponce de Leon Blvd<br>Coral Gables, FL 33146<br><span class="small muted">Across from the Coral Gables campus. 4-minute walk from the University Metrorail station.</span></p>
+            </div>
+            <div class="card reveal" data-delay="1">
+              <h4 class="eyebrow">Hours</h4>
+              <h3>Open every day</h3>
+              <p class="mb-0 small">Mon–Fri 7:30 AM – 11 PM<br>Sat–Sun 10 AM – 11 PM<br>Night Owl Noodles until 1 AM<br><span class="muted">Hours vary by bay. See <a href="restaurants.html">What's Cooking</a>.</span></p>
+            </div>
+            <div class="card reveal" data-delay="2">
+              <h4 class="eyebrow">Email &amp; phone</h4>
+              <h3>Talk to a person</h3>
+              <p class="mb-0 small"><a href="mailto:hello@craveu.app">hello@craveu.app</a> — diners<br><a href="mailto:partners@craveu.app">partners@craveu.app</a> — restaurants<br><a href="tel:+13055550188">(305) 555-0188</a> — pickup counter</p>
+            </div>
+            <div class="card reveal" data-delay="3">
+              <h4 class="eyebrow">Social</h4>
+              <h3>Follow along</h3>
+              <p class="mb-0 small">Instagram <a href="https://instagram.com" rel="noopener">@craveu.miami</a><br>TikTok <a href="https://tiktok.com" rel="noopener">@craveu</a><br>New bays, daily specials and giveaways.</p>
+            </div>
+          </div>
+
+          <div class="card card--green mt-2 reveal">
+            <div style="display:grid; grid-template-columns:1fr auto; gap:1rem; align-items:center;">
+              <div>
+                <h3 style="margin-bottom:0.2rem;">Problem with an order?</h3>
+                <p class="small mb-0" style="color:rgba(243,231,207,0.85);">Tap "Something wrong?" on your order screen in the app. The counter team fixes it on the spot.</p>
+              </div>
+              <a class="btn btn--cream btn--sm" href="app/">Open app</a>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <form class="form card" data-demo>
+            <h3 class="mt-0">Send a message</h3>
+            <div class="form__row">
+              <div><label for="c-name">Name</label><input id="c-name" name="name" required autocomplete="name"></div>
+              <div><label for="c-email">Email</label><input id="c-email" type="email" name="email" required autocomplete="email"></div>
+            </div>
+            <div><label for="c-topic">Topic</label>
+              <select id="c-topic" name="topic">
+                <option>General question</option>
+                <option>Catering for a campus office or event</option>
+                <option>Student organization partnership</option>
+                <option>Press</option>
+                <option>Something else</option>
+              </select>
+            </div>
+            <div><label for="c-msg">Message</label><textarea id="c-msg" name="message" rows="5" required></textarea></div>
+            <button class="btn btn--green" type="submit">Send message</button>
+            <p class="form__note mb-0">This prototype doesn't send email yet. On launch, messages go straight to the founders' inbox.</p>
+          </form>
+          <div class="form-success"><h3>Got it.</h3><p class="mb-0">Thanks for reaching out. We reply within one business day.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--paper">
+      <div class="wrap">
+        <span class="eyebrow">Map</span>
+        <h2>Steps from campus</h2>
+        <div class="card card--flat" style="padding:0; overflow:hidden; border-radius:var(--radius);">
+          <svg viewBox="0 0 1200 420" width="100%" role="img" aria-label="Simplified map: CraveU on Ponce de Leon Blvd across from the University of Miami Coral Gables campus, near the University Metrorail station" style="display:block; background:#EAF0EA;">
+            <defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="rgba(11,77,58,0.08)"/></pattern></defs>
+            <rect width="1200" height="420" fill="url(#grid)"/>
+            <!-- campus -->
+            <rect x="80" y="60" width="620" height="300" rx="24" fill="#0B4D3A" opacity="0.92"/>
+            <text x="390" y="200" text-anchor="middle" font-family="Alfa Slab One, serif" font-size="34" fill="#F3E7CF">University of Miami</text>
+            <text x="390" y="238" text-anchor="middle" font-family="Poppins, sans-serif" font-size="18" fill="#F3E7CF" opacity="0.85">Coral Gables campus</text>
+            <ellipse cx="260" cy="300" rx="90" ry="34" fill="#2E7A62"/>
+            <text x="260" y="305" text-anchor="middle" font-family="Poppins, sans-serif" font-size="13" fill="#F3E7CF">Lake Osceola</text>
+            <!-- road -->
+            <rect x="740" y="0" width="56" height="420" fill="#111"/>
+            <path d="M768 0V420" stroke="#F3E7CF" stroke-width="4" stroke-dasharray="26 22"/>
+            <text x="768" y="40" text-anchor="middle" font-family="Poppins, sans-serif" font-size="13" fill="#F3E7CF" transform="rotate(90 768 40)" opacity="0.9">Ponce de Leon Blvd</text>
+            <!-- metrorail -->
+            <rect x="1040" y="0" width="22" height="420" fill="#555"/>
+            <rect x="1000" y="300" width="102" height="48" rx="10" fill="#F3E7CF" stroke="#111" stroke-width="3"/>
+            <text x="1051" y="330" text-anchor="middle" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#111">Metrorail</text>
+            <!-- CraveU -->
+            <rect x="840" y="130" width="150" height="120" rx="18" fill="#F47A1F" stroke="#111" stroke-width="4"/>
+            <text x="915" y="183" text-anchor="middle" font-family="Alfa Slab One, serif" font-size="30" fill="#111">CRAVE</text>
+            <text x="915" y="222" text-anchor="middle" font-family="Alfa Slab One, serif" font-size="30" fill="#0B4D3A">U</text>
+            <!-- walking path -->
+            <path d="M700 190 C 740 190, 800 190, 840 190" stroke="#F47A1F" stroke-width="5" stroke-dasharray="8 8" fill="none"/>
+            <text x="770" y="178" text-anchor="middle" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#111">2 min</text>
+            <path d="M990 190 C 1010 190, 1030 250, 1050 300" stroke="#F47A1F" stroke-width="5" stroke-dasharray="8 8" fill="none"/>
+            <text x="1035" y="235" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#111">4 min</text>
+          </svg>
+        </div>
+        <p class="small muted mt-1">Illustrative map. Final location is subject to our agreement with the University of Miami.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div>
+          <a class="footer__logo" href="index.html" aria-label="CraveU home"><img src="assets/logo.png" alt="CraveU"></a>
+          <p class="mt-1 small">A takeout-only kitchen hall for students, faculty and staff at the University of Miami. Every craving, one quick pickup.</p>
+          <p class="small">Founded in Coral Gables by UM students, 2026.</p>
+        </div>
+        <div><h4>Eat</h4><ul><li><a href="restaurants.html">What's cooking</a></li><li><a href="how-it-works.html">How it works</a></li><li><a href="app/">Order in the app</a></li></ul></div>
+        <div><h4>Cook</h4><ul><li><a href="partners.html">Rent a kitchen bay</a></li><li><a href="partners.html#pricing">Pricing</a></li><li><a href="partners.html#apply">Apply</a></li></ul></div>
+        <div><h4>Contact</h4><ul><li><a href="mailto:hello@craveu.app">hello@craveu.app</a></li><li><a href="tel:+13055550188">(305) 555-0188</a></li><li>Ponce de Leon Blvd<br>Coral Gables, FL 33146</li><li><a href="about.html">About the founders</a></li></ul></div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> CraveU. A BTE 210 student venture at the University of Miami.</span>
+        <span>Not affiliated with or endorsed by the University of Miami.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>CraveU — Mobile App Prototype</title>
+  <meta name="description" content="Clickable mobile app prototype for CraveU, the takeout-only kitchen hall at the University of Miami.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <div class="stage">
+    <aside class="stage__side">
+      <a href="../index.html" class="stage__logo"><img src="../assets/logo.png" alt="CraveU"></a>
+      <h1>Mobile app prototype</h1>
+      <p>A clickable walkthrough of the CraveU ordering app. Every screen maps to a block on our Business Model Canvas.</p>
+      <ol class="stage__flow">
+        <li><strong>Sign in with CaneID</strong> unlocks Dining Dollars &amp; Cane Express <span>UM partnership</span></li>
+        <li><strong>Browse all 8 bays</strong> on one screen with live wait times <span>Value proposition</span></li>
+        <li><strong>Pick a pickup slot</strong> around your class schedule <span>Takeout-only design</span></li>
+        <li><strong>Group order</strong> from different bays, everyone pays their own <span>Group-order problem</span></li>
+        <li><strong>$0.99 service fee</strong> shown on every order <span>Revenue stream #2</span></li>
+        <li><strong>Track &amp; pick up</strong> at one counter, earn Crave Points <span>Customer relationships</span></li>
+      </ol>
+      <p class="stage__hint">Tip: tap anything. Use the back arrow or the tab bar to move around. Reload to start over.</p>
+      <a class="stage__link" href="../index.html">← Back to craveu website</a>
+    </aside>
+
+    <div class="phone-wrap">
+      <div class="phone" id="phone">
+        <div class="phone__island"></div>
+        <div class="phone__screen">
+          <div class="statusbar"><span id="clock">9:41</span><span class="statusbar__icons">●●●● <b>▮</b></span></div>
+          <div id="app" class="app" aria-live="polite"></div>
+          <div class="toast" id="toast" role="status"></div>
+          <div class="phone__home"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
