@@ -1,0 +1,20 @@
+{
+  "name": "CraveU",
+  "short_name": "CraveU",
+  "description": "Every craving, one quick pickup. Order from every kitchen bay at the University of Miami and grab it at one counter.",
+  "id": "/craveu/app/",
+  "start_url": "./?source=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0B4D3A",
+  "theme_color": "#0B4D3A",
+  "lang": "en",
+  "categories": ["food", "lifestyle"],
+  "icons": [
+    { "src": "../assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "../assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "../assets/icon-maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "../assets/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

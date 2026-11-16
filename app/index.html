@@ -7,6 +7,12 @@
   <meta name="description" content="Clickable mobile app prototype for CraveU, the takeout-only kitchen hall at the University of Miami.">
   <link rel="icon" type="image/png" href="../assets/favicon.png">
   <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#0B4D3A">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="CraveU">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -27,6 +33,12 @@
         <li><strong>Track &amp; pick up</strong> at one counter, earn Crave Points <span>Customer relationships</span></li>
       </ol>
       <p class="stage__hint">Tip: tap anything. Use the back arrow or the tab bar to move around. Reload to start over.</p>
+      <div class="stage__install" id="install-tip">
+        <strong>Put it on your phone</strong>
+        <span class="stage__install-ios">On iPhone: open this page in Safari, tap <b>Share</b> → <b>Add to Home Screen</b>. It launches full-screen like a native app.</span>
+        <span class="stage__install-android">On Android: open in Chrome and tap <b>Install app</b> when it appears.</span>
+        <button class="stage__install-btn" id="install-btn" hidden>Install CraveU</button>
+      </div>
       <a class="stage__link" href="../index.html">← Back to craveu website</a>
     </aside>
 
@@ -43,5 +55,26 @@
     </div>
   </div>
   <script src="app.js"></script>
+  <script>
+    // PWA: register the service worker (not inside the website's embedded iframe)
+    if ('serviceWorker' in navigator && location.search.indexOf('embed=1') < 0) {
+      window.addEventListener('load', function () { navigator.serviceWorker.register('sw.js').catch(function () {}); });
+    }
+    // Chrome/Android: surface the install prompt as a button
+    var deferredInstall = null;
+    window.addEventListener('beforeinstallprompt', function (e) {
+      e.preventDefault(); deferredInstall = e;
+      var b = document.getElementById('install-btn'); if (b) b.hidden = false;
+    });
+    var installBtn = document.getElementById('install-btn');
+    if (installBtn) installBtn.addEventListener('click', function () {
+      if (!deferredInstall) return;
+      deferredInstall.prompt(); deferredInstall.userChoice.then(function () { deferredInstall = null; installBtn.hidden = true; });
+    });
+    // Already installed: hide the tip
+    if (window.matchMedia('(display-mode: standalone)').matches || navigator.standalone) {
+      var tip = document.getElementById('install-tip'); if (tip) tip.hidden = true;
+    }
+  </script>
 </body>
 </html>

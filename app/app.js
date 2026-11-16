@@ -93,6 +93,8 @@
   var app = document.getElementById('app');
   var params = new URLSearchParams(location.search);
   if (params.get('embed') === '1') document.body.classList.add('embed');
+  // Launched from the home screen (PWA): fill the real phone screen, no drawn bezel
+  if (window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true) document.body.classList.add('standalone');
 
   // ---------- Helpers ----------
   function $(sel, root) { return (root || document).querySelector(sel); }
