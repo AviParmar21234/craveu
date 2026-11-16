@@ -1,6 +1,6 @@
 /* CraveU service worker — caches the app shell so the prototype opens
    instantly from the home screen and works offline. Bump VERSION on deploy. */
-var VERSION = 'craveu-v1';
+var VERSION = 'craveu-v2';
 var SHELL = [
   './',
   './index.html',

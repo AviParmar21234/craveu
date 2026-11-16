@@ -300,7 +300,8 @@ body.standalone .cta-bar { padding-bottom: max(20px, env(safe-area-inset-bottom)
 .stripe { height: 8px; background: repeating-linear-gradient(90deg, var(--green) 0 40px, var(--orange) 40px 60px, var(--cream) 60px 70px); flex: 0 0 8px; }
 
 /* Toast */
-.toast { position: absolute; top: 64px; left: 16px; right: 16px; z-index: 40; background: var(--ink); color: var(--cream); border-radius: 16px; padding: 12px 14px; font-size: 0.85rem; display: flex; gap: 10px; align-items: center; transform: translateY(-140%); transition: transform 0.35s cubic-bezier(0.2,0.7,0.2,1); box-shadow: 0 10px 30px rgba(0,0,0,0.3); border: 2px solid var(--orange); }
+.toast { position: absolute; top: 64px; left: 16px; right: 16px; z-index: 40; background: var(--ink); color: var(--cream); border-radius: 16px; padding: 12px 14px; font-size: 0.85rem; display: flex; gap: 10px; align-items: center; transform: translateY(-300%); transition: transform 0.35s cubic-bezier(0.2,0.7,0.2,1); box-shadow: 0 10px 30px rgba(0,0,0,0.3); border: 2px solid var(--orange); }
+body.standalone .toast { top: calc(env(safe-area-inset-top, 0px) + 10px); }
 .toast.show { transform: none; }
 .toast .ti { width: 34px; height: 34px; border-radius: 9px; background: var(--orange); display: grid; place-items: center; flex: 0 0 34px; }
 .toast b { display: block; font-weight: 600; }
